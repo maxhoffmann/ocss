@@ -11,25 +11,26 @@ __in `widget.bem`:__
 ```
 display: block
 
-=small
-  font-size: 50%
-  
-  text=big
-    font-size: 100%
-    
-  text link
-    font-weight: bold # comment
-    
-
 text
   color: blue
   font-size: 100%
 
+  link
+    text-decoration: underline
+    
   =big
     font-size: 200%
     
-  link
-    text-decoration: underline
+=small
+  font-size: 50%
+  
+  text
+    
+    link
+      font-weight: bold # comment
+      
+    =big
+      font-size: 100%
 ```
 
 ### CSS Output:
@@ -38,26 +39,24 @@ text
 .widget {
   display: block;
 }
-  .widget--small {
-    font-size: 50%;
+.widget__text {
+  color: blue;
+  font-size: 100%;
+}
+  .widget__text--big {
+    font-size: 200%;
+  }
+.widget__text__link {
+  text-decoration: underline;
+}
+
+.widget--small {
+  font-size: 50%;
+}
+  .widget--small .widget__text__link {
+    font-weight: bold;
   }
   .widget--small .widget__text--big {
     font-size: 100%;
   }
-  .widget--small .widget__text__link {
-    font-weight: bold;
-  }
-
-    
-  .widget__text {
-    color: blue;
-    font-size: 100%;
-  }
-    .widget__text--big {
-      font-size: 200%;
-    }
-    
-    .widget__text__link {
-      text-decoration: underline;
-    }
 ```
