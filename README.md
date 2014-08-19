@@ -1,4 +1,4 @@
-noCSS
+CCSS (Component CSS)
 ===
 
 A CSS preprocessor that restricts you to use best practices.
