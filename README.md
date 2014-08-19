@@ -30,29 +30,30 @@ block
 
 ### Example
 
+`widget.bem`
+
 ```
-widget
-  display: block
+display: block
+
+=small
+  font-size: 50%
   
-  =small
-    font-size: 50%
-    
-    text=big
-      font-size: 100%
-      
-    text link
-      font-weight: bold
-      
-  
-  text
-    color: blue
+  text=big
     font-size: 100%
-  
-    =big
-      font-size: 200%
-      
-    link
-      text-decoration: underline
+    
+  text link
+    font-weight: bold
+    
+
+text
+  color: blue
+  font-size: 100%
+
+  =big
+    font-size: 200%
+    
+  link
+    text-decoration: underline
 ```
 
 ### CSS Output:
