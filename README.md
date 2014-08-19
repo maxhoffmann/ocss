@@ -36,27 +36,33 @@ text
 ### CSS Output:
 
 ```css
-.widget {
+.widget
+{
   display: block;
 }
-.widget__text {
+.widget__text
+{
   color: blue;
   font-size: 100%;
 }
-  .widget__text--big {
-    font-size: 200%;
-  }
-.widget__text__link {
+.widget__text--big
+{
+  font-size: 200%;
+}
+.widget__text__link
+{
   text-decoration: underline;
 }
-
-.widget--small {
+.widget--small
+{
   font-size: 50%;
 }
-  .widget--small .widget__text__link {
-    font-weight: bold;
-  }
-  .widget--small .widget__text--big {
-    font-size: 100%;
-  }
+.widget--small .widget__text__link
+{
+  font-weight: bold;
+}
+.widget--small .widget__text--big
+{
+  font-size: 100%;
+}
 ```
