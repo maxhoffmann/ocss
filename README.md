@@ -13,11 +13,19 @@ block
     
   element
   
+  
   another_element
   
     =modifier
   
     element
+    
+    
+  =another_modifier
+  
+    element child_element
+    
+    element=modifier
 ```
 
 ### Example
@@ -26,8 +34,15 @@ block
 widget
   display: block
   
-  =hidden
-    display: none
+  =small
+    font-size: 50%
+    
+    text=big
+      font-size: 100%
+      
+    text link
+      font-weight: bold
+      
   
   text
     color: blue
@@ -46,18 +61,25 @@ widget
 .widget {
   display: block;
 }
-.widget--hidden {
-  display: none;
-}
+  .widget--small {
+    font-size: 50%;
+  }
+  .widget--small .widget__text--big {
+    font-size: 100%;
+  }
+  .widget--small .widget__text__link {
+    font-weight: bold;
+  }
+
     
   .widget__text {
     color: blue;
     font-size: 100%;
   }
-  .widget__text--big {
-    font-size: 200%;
-  }
-      
+    .widget__text--big {
+      font-size: 200%;
+    }
+    
     .widget__text__link {
       text-decoration: underline;
     }
