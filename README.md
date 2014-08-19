@@ -1,12 +1,12 @@
-bem
+noCSS
 ===
 
-a BEM driven CSS preprocessor
+a CSS preprocessor that restricts you to use best practices
 
 Syntax
 ------
 
-__in `widget.bem`:__
+__in `widget.nocss`:__
 
 ```
 display: block
