@@ -60,6 +60,10 @@ text
 Compiler
 --------
 
+- uses an AST which is created by a seperate `ccss-parser`
+- every rule is its own module
+- all rules are turned on by default and can only to be disabled with a settings file (not recommended)
+
 __prevents:__
 - IDs
   - they prevent reuse and have no advantage to classes
