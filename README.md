@@ -22,7 +22,7 @@ block
 
 ### Example
 
-```css
+```
 widget
   display: block
   
@@ -42,7 +42,7 @@ widget
 
 ### CSS Output:
 
-```
+```css
 .widget {
   display: block;
 }
