@@ -47,11 +47,11 @@ text
 {
   text-decoration: underline;
 }
-.widget.small
+.widget--small
 {
   font-size: 50%;
 }
-.widget.small .widget-text-link
+.widget--small .widget-text-link
 {
   font-weight: bold;
 }
