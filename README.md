@@ -11,7 +11,7 @@ Background
 Example
 ------
 
-__in `widget.nocss`:__
+__in `widget.ccss`:__
 
 ```
 display: block
