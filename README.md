@@ -69,6 +69,8 @@ __prevents:__
   - if an element is worth to have a modifier it should be a component
 - nesting components
   - instead of changing properties of another component, you should add a modifier to it and apply those changes there
+- dashes
+  - dashes are used by the compiler to create scopes via prefixes, use underscores instead
 
 __forbids:__
 - `!important`
