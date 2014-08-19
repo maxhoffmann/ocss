@@ -67,6 +67,8 @@ __prevents:__
   - tags should only be used as a general baseline (can only be included in `tags.nocss`)
 - element modifiers
   - if an element is worth to have a modifier it should be a component
+- nesting components
+  - instead of changing properties of another component, you should add a modifier to it and apply those changes there
 
 __forbids:__
 - `!important`
