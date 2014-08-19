@@ -6,31 +6,7 @@ a BEM driven CSS preprocessor
 Syntax
 ------
 
-```
-block
-  
-  =modifier
-    
-  element
-  
-  
-  another_element
-  
-    =modifier
-  
-    element
-    
-    
-  =another_modifier
-  
-    element child_element
-    
-    element=modifier
-```
-
-### Example
-
-`widget.bem`
+__in `widget.bem`:__
 
 ```
 display: block
