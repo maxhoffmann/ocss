@@ -22,7 +22,7 @@ block
 
 ### Example
 
-```
+```css
 widget
   display: block
   
