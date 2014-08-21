@@ -19,7 +19,9 @@ What if
 - renaming a component is as simple as renaming a file?
 - prefixing some components is as simple as putting them in a folder?
 - your preprocessor could generate a documentation of all components?
-- you could add html inside the styles that will generate the docs? 
+- you could add html inside the styles that will generate the docs?
+- every rule would be an optional?
+- rules can easily added via plugins?
 
 Example
 ------
