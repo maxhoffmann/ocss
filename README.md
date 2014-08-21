@@ -12,7 +12,7 @@ What if
 - components can’t be overwritten outside of theirs files?
 - the compiler throws an error if you already have a component with the same name?
 - nesting deeper than 3 levels would throw an error?
-- tags have to inside of one single file?
+- tags have to live inside of one single file?
 - nesting components is not possible?
 - adding modifiers to elements is not possible?
 - there are files that define the relationship between two components?
