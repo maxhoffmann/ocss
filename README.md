@@ -17,6 +17,7 @@ What if
 - there are files that define the relationship between two components?
 - renaming a component is as simple as renaming a file?
 - prefixing some components is as simple as putting them in a folder?
+- your preprocessor could generate a documentation of all components?
 
 Example
 ------
