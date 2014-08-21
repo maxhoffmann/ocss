@@ -86,6 +86,8 @@ text
 
 ### Example with HTML
 
+__Note: This won’t change the compiled CSS. It’s just for adding HTML examples to the docs.__
+
 __in `widget.ccss`:__
 ```
 (div)
@@ -113,9 +115,7 @@ __in `widget.ccss`:__
       color: blue
 ```
 
-___Note: This won’t change the compiled CSS.___
-
-__It will generate this HTML to the docs:__
+__Adds this markup:__
 
 ```html
 <div class="_widget--big">
