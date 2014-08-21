@@ -73,11 +73,11 @@ text
 {
   font-weight: bold;
 }
-.widget---big .widget
+._widget--big .widget
 {
   font-size: 200%;
 }
-.widget---big .widget-text
+._widget--big .widget-text
 {
   color: blue;
 }
