@@ -45,7 +45,7 @@ text
     link
       font-weight: bold
       
-@big # parent modifier
+^big # parent modifier
   font-size: 200%
   
   text
