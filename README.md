@@ -40,7 +40,10 @@ text
   
   text
     link
-      font-weight: bold # comment
+      font-weight: bold # this is a comment
+      
+@big
+  font-size: 200%
 ```
 
 ### CSS Output:
@@ -66,6 +69,10 @@ text
 .widget--small .widget-text-link
 {
   font-weight: bold;
+}
+.widget---big .widget
+{
+  font-size: 200%
 }
 ```
 
