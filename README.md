@@ -6,6 +6,7 @@ A CSS preprocessor that restricts you to use best practices. Its goal is to make
 What if
 --------
 
+- classes are the default?
 - nesting compiles to BEM?
 - using IDs or `!important` would throw an error?
 - components can’t be overwritten outside of theirs files?
