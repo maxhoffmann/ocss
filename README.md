@@ -3,6 +3,15 @@ CCSS (Component CSS)
 
 A CSS preprocessor that restricts you to use best practices. Its goal is to make it easy to do the right thing and hard to do the wrong thing.
 
+What if
+--------
+
+- nesting compiles to BEM?
+- using IDs or `!important` would throw an error?
+- components can’t be overwritten outside of theirs files?
+- the compiler throws an error if you already have a component with the same name?
+- nesting deeper than 3 levels would throw an error?
+- tags have to inside of one single file?
 
 Example
 ------
