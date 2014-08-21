@@ -14,6 +14,7 @@ What if
 - tags have to inside of one single file?
 - nesting components is not possible?
 - adding modifiers to elements is not possible?
+- there are files that define the relationship between two components?
 - renaming a component is as simple as renaming a file?
 - prefixing some components is as simple as putting them in a folder?
 
