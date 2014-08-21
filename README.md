@@ -55,33 +55,26 @@ text
 ### CSS Output:
 
 ```css
-.widget
-{
+.widget {
   display: block;
 }
-.widget-text
-{
+.widget-text {
   color: blue;
   font-size: 100%;
 }
-.widget-text-link
-{
+.widget-text-link {
   text-decoration: underline;
 }
-.widget--small
-{
+.widget--small {
   font-size: 50%;
 }
-.widget--small .widget-text-link
-{
+.widget--small .widget-text-link {
   font-weight: bold;
 }
-._widget--big .widget
-{
+._widget--big .widget {
   font-size: 200%;
 }
-._widget--big .widget-text
-{
+._widget--big .widget-text {
   color: blue;
 }
 ```
