@@ -113,10 +113,11 @@ __in `widget.ccss`:__
       color: blue
 ```
 
-__will generate this HTML to the docs:__
+___Note: This won’t change the compiled CSS.___
 
-```
+__It will generate this HTML to the docs:__
 
+```html
 <div class="_widget--big">
 
 <div class="widget">
@@ -126,7 +127,6 @@ __will generate this HTML to the docs:__
 </div>
 
 </div>
-
 ```
 
 Compiler
