@@ -44,6 +44,9 @@ text
       
 @big
   font-size: 200%
+  
+  text
+    color: blue
 ```
 
 ### CSS Output:
@@ -72,7 +75,11 @@ text
 }
 .widget---big .widget
 {
-  font-size: 200%
+  font-size: 200%;
+}
+.widget---big .widget-text
+{
+  color: blue;
 }
 ```
 
