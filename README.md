@@ -38,14 +38,14 @@ text
   link
     text-decoration: underline
     
-=small
+=small # component modifier
   font-size: 50%
   
   text
     link
-      font-weight: bold # this is a comment
+      font-weight: bold
       
-@big
+@big # parent modifier
   font-size: 200%
   
   text
@@ -149,6 +149,8 @@ __prevents:__
   - instead of changing properties of another component, you should add a modifier to it and apply those changes there
 - dashes
   - dashes are used by the compiler to create scopes via prefixes, use underscores instead
+- components starting with an underscore
+  - underscore prefix is used by the compiler to point out parent modifiers
 
 __forbids:__
 - `!important`
