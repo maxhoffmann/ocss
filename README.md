@@ -3,10 +3,6 @@ CCSS (Component CSS)
 
 A CSS preprocessor that restricts you to use best practices. Its goal is to make it easy to do the right thing and hard to do the wrong thing.
 
-Background
-----------
-
-
 
 Example
 ------
