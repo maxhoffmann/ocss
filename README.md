@@ -19,6 +19,7 @@ What if
 - renaming a component is as simple as renaming a file?
 - prefixing some components is as simple as putting them in a folder?
 - your preprocessor could generate a documentation of all components?
+- you could add html inside the styles that will generate the docs? 
 
 Example
 ------
@@ -81,6 +82,51 @@ text
 {
   color: blue;
 }
+```
+
+### Example with HTML
+
+__in `widget.ccss`:__
+```
+(div)
+
+  display: block
+  
+  (p)text
+    color: blue
+    font-size: 100%
+  
+    (a)link
+      text-decoration: underline
+      
+  =small
+    font-size: 50%
+    
+    text
+      link
+        font-weight: bold # this is a comment
+        
+  (div)@big
+    font-size: 200%
+    
+    text
+      color: blue
+```
+
+__will generate this HTML to the docs:__
+
+```
+
+<div class="_widget--big">
+
+<div class="widget">
+  <p class="widget-text">
+    <a class="widget-text-link"></a>
+  </p>
+</div>
+
+</div>
+
 ```
 
 Compiler
