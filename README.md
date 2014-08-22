@@ -1,7 +1,9 @@
-CCSS (Component CSS)
+OCSS (Object CSS)
 ===
 
 A CSS preprocessor that restricts you to use best practices. Its goal is to make it easy to do the right thing and hard to do the wrong thing.
+
+OCSS is intended for large scale web products, but it can also help to keep clean CSS in smaller projects. It’s philosophy is to build pages/views out of multiple CSS objects that are independent of each other.
 
 What if
 --------
@@ -26,7 +28,7 @@ What if
 Example
 ------
 
-__in `widget.ccss`:__
+__in `widget.ocss`:__
 
 ```
 display: block
@@ -127,7 +129,7 @@ __Adds this markup:__
 Compiler
 --------
 
-- uses an AST which is created by a seperate `ccss-parser`
+- uses an AST which is created by a seperate `ocss-parser`
 - every rule is its own module
 - all rules are turned on by default and can only to be disabled with a settings file (not recommended)
 
@@ -135,7 +137,7 @@ __prevents:__
 - IDs
   - they prevent reuse and have no advantage to classes
 - tags
-  - tags should only be used as a general baseline (can only be included in `tags.nocss`)
+  - tags should only be used as a general baseline (can only be included in `tags.css`)
 - element modifiers
   - if an element is worth to have a modifier it should be a component
 - nesting components
@@ -148,7 +150,7 @@ __prevents:__
 __forbids:__
 - `!important`
 - multiple components with the same name
-- nesting deeper than 3 levels (may be changed in `nocss.json`)
+- nesting deeper than 3 levels (may be changed in `ocss.json`)
 
 __adds:__
 - `box-sizing: border-box` to all elements
