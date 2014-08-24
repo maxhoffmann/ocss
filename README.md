@@ -129,7 +129,7 @@ __Adds this markup:__
 Compiler
 --------
 
-- uses an AST which is created by a seperate `ocss-parser`
+- uses an AST which is created by a seperate [ocss-parser](https://github.com/maxhoffmann/ocss-parser)
 - every rule is its own module
 - all rules are turned on by default and can only to be disabled with a settings file (not recommended)
 
