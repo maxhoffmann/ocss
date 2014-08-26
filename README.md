@@ -11,16 +11,16 @@ What if
 - classes are the default?
 - nesting compiles to BEM?
 - using IDs or `!important` would throw an error?
-- components can’t be overwritten outside of theirs files?
-- the compiler throws an error if you already have a component with the same name?
+- objects can’t be overwritten outside of theirs files?
+- the compiler throws an error if you already have a object with the same name?
 - nesting deeper than 3 levels would throw an error?
 - tags have to live inside of one single file?
-- nesting components is not possible?
-- modifiers can only be added to components (not elements of a component)?
-- there are files that define the relationship between two components?
-- renaming a component is as simple as renaming a file?
-- prefixing some components is as simple as putting them in a folder?
-- your preprocessor could generate a documentation of all components?
+- nesting objects is not possible?
+- modifiers can only be added to objects (not elements of a object)?
+- there are files that define the relationship between two objects?
+- renaming a object is as simple as renaming a file?
+- prefixing some objects is as simple as putting them in a folder?
+- your preprocessor could generate a documentation of all objects?
 - you could add html inside the styles that will generate the docs?
 - every rule would be an optional?
 - rules can easily added via plugins?
@@ -40,7 +40,7 @@ text
   link
     text-decoration: underline
     
-=small # component modifier
+=small # object modifier
   font-size: 50%
   
   text
@@ -129,9 +129,7 @@ __Adds this markup:__
 Compiler
 --------
 
-- uses an AST which is created by a seperate [ocss-parser](https://github.com/maxhoffmann/ocss-parser)
-- every rule is its own module
-- all rules are turned on by default and can only to be disabled with a settings file (not recommended)
+uses an AST which is created by a seperate [ocss-parser](https://github.com/maxhoffmann/ocss-parser)
 
 __prevents:__
 - IDs
@@ -139,18 +137,12 @@ __prevents:__
 - tags
   - tags should only be used as a general baseline (can only be included in `tags.css`)
 - element modifiers
-  - if an element is worth to have a modifier it should be a component
-- nesting components
-  - instead of changing properties of another component, you should add a modifier to it and apply those changes there
+  - if an element is worth to have a modifier it should be a object
+- nesting objects
+  - instead of changing properties of another object, you should add a modifier to it and apply those changes there
 - dashes
   - dashes are used by the compiler to create scopes via prefixes, use underscores instead
-- components starting with an underscore
-  - underscore prefix is used by the compiler to point out parent modifiers
-
-__forbids:__
 - `!important`
-- multiple components with the same name
-- nesting deeper than 3 levels (may be changed in `ocss.json`)
-
-__adds:__
-- `box-sizing: border-box` to all elements
+  - the evil of specificity
+- multiple objects with the same name
+  - the file for the object should be the single source of truth
