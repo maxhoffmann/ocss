@@ -105,7 +105,7 @@ __in `widget.ccss`:__
       link
         font-weight: bold # this is a comment
         
-  (div)@big
+  (div)^big
     font-size: 200%
     
     text
