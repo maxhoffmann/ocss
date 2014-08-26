@@ -28,5 +28,8 @@
   "devDependencies": {
     "tap-dot": "^0.2.2",
     "tape": "^2.14.0"
+  },
+  "dependencies": {
+    "ocss-parser": "^1.0.0"
   }
 }
