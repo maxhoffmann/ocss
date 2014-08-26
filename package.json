@@ -1,0 +1,32 @@
+{
+  "name": "ocss",
+  "version": "1.0.0",
+  "description": "a CSS preprocessor that restricts you to use best practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/index.js | tap-dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://maxhoffmann@github.com/maxhoffmann/ocss.git"
+  },
+  "keywords": [
+    "ocss",
+    "css",
+    "best",
+    "practices",
+    "large",
+    "scale",
+    "enterprise"
+  ],
+  "author": "Maximilian Hoffmann <account@maximilianhoffmann.com> (http://maximilianhoffmann.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxhoffmann/ocss/issues"
+  },
+  "homepage": "https://github.com/maxhoffmann/ocss",
+  "devDependencies": {
+    "tap-dot": "^0.2.2",
+    "tape": "^2.14.0"
+  }
+}
