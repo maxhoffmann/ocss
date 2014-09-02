@@ -1,12 +1,12 @@
 OCSS (Object CSS)
-===
+=================
 
 A CSS preprocessor that restricts you to use best practices. Its goal is to make it easy to do the right thing and hard to do the wrong thing.
 
-OCSS is intended for large scale web products, but it can also help to keep clean CSS in smaller projects. It’s philosophy is to build pages/views out of multiple CSS objects that are independent of each other.
+OCSS is intended for large scale web products, but it can also help to keep clean CSS in smaller projects. Its philosophy is to build pages/views out of multiple CSS objects that are independent of each other.
 
 What if
---------
+-------
 
 - classes are the default?
 - nesting compiles to BEM?
@@ -26,7 +26,7 @@ What if
 - rules can easily added via plugins?
 
 Example
-------
+-------
 
 __in `widget.ocss`:__
 
