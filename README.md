@@ -21,8 +21,6 @@ What if
 - renaming a object is as simple as renaming a file?
 - prefixing some objects is as simple as putting them in a folder?
 - your preprocessor could generate a documentation of all objects?
-- you could add html inside the styles that will generate the docs?
-- every rule would be an optional?
 - rules can easily added via plugins?
 
 Example
@@ -79,51 +77,6 @@ text
 ._widget--big .widget-text {
   color: blue;
 }
-```
-
-### Example with HTML
-
-__Note: This won’t change the compiled CSS. It’s just for adding HTML examples to the docs.__
-
-__in `widget.ccss`:__
-```
-(div)
-
-  display: block
-  
-  (p)text
-    color: blue
-    font-size: 100%
-  
-    (a)link
-      text-decoration: underline
-      
-  =small
-    font-size: 50%
-    
-    text
-      link
-        font-weight: bold # this is a comment
-        
-  (div)^big
-    font-size: 200%
-    
-    text
-      color: blue
-```
-
-__Adds this markup:__
-
-```html
-<div class="_widget--big">
-
-<div class="widget">
-  <p class="widget-text">
-    <a class="widget-text-link"></a>
-  </p>
-</div>
-
-</div>
 ```
 
 Compiler
