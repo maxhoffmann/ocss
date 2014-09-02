@@ -38,18 +38,12 @@ text
   link
     text-decoration: underline
     
-=small // object modifier
+=small // modifier
   font-size: 50%
   
   text
     link
       font-weight: bold
-      
-^big // parent modifier
-  font-size: 200%
-  
-  text
-    color: blue
 ```
 
 ### CSS Output:
@@ -65,17 +59,12 @@ text
 .widget-text-link {
   text-decoration: underline;
 }
-.widget--small {
+.widget--small,
+.widget--small .widget {
   font-size: 50%;
 }
 .widget--small .widget-text-link {
   font-weight: bold;
-}
-._widget--big .widget {
-  font-size: 200%;
-}
-._widget--big .widget-text {
-  color: blue;
 }
 ```
 
