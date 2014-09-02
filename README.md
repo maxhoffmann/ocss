@@ -12,13 +12,13 @@ What if
 - nesting compiles to BEM?
 - using IDs or `!important` would throw an error?
 - objects can’t be overwritten outside of theirs files?
-- the compiler throws an error if you already have a object with the same name?
+- the compiler throws an error if you already have an object with the same name?
 - nesting deeper than 3 levels would throw an error?
 - tags have to live inside of one single file?
 - nesting objects is not possible?
-- modifiers can only be added to objects (not elements of a object)?
+- modifiers can only be added to objects (not elements of an object)?
 - there are files that define the relationship between two objects?
-- renaming a object is as simple as renaming a file?
+- renaming an object is as simple as renaming a file?
 - prefixing some objects is as simple as putting them in a folder?
 - your preprocessor could generate a documentation of all objects?
 - rules can easily added via plugins?
@@ -90,7 +90,7 @@ __prevents:__
 - tags
   - tags should only be used as a general baseline (can only be included in `tags.css`)
 - element modifiers
-  - if an element is worth to have a modifier it should be a object
+  - if an element is worth to have a modifier it should be an object
 - nesting objects
   - instead of changing properties of another object, you should add a modifier to it and apply those changes there
 - dashes
