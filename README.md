@@ -59,8 +59,7 @@ text
 .widget-text-link {
   text-decoration: underline;
 }
-.widget.widget--small,
-.widget--small .widget {
+.widget--small {
   font-size: 50%;
 }
 .widget--small .widget-text-link {
