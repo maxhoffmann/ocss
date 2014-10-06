@@ -34,12 +34,12 @@ FAQ
 - Why preventing tags in every file?
   - Tags should only be used as a general baseline as it’s easy to overwrite other styles using them. (can only be included in `tags.css`)
 - Why shouldn’t you add modifiers to element of an object?
-  - Ff an element is worth to have a modifier, it has state and should thereforeto be an object.
+  - If an element is worth to have a modifier, it has state and should therefore be an object.
 - Why shouldn’t you nest objects?
-  - Nesting object creates a direct relationship between components and therefore reduces reusability and adds dependencies inside your style system. Instead of changing properties of another object, add modifiers to it and to apply changes depending on state.
+  - Nesting objects creates a direct relationship between components. This reduces reusability and adds dependencies inside your style system. Instead of changing properties of another object, add modifiers to it and to apply changes depending on state.
 - Why can’t I use dashes?
   - Dashes are used by the compiler to create scopes. You can use underscores instead.
 - Why shouldn’t I use `!important`?
-  - It the start of most specificity wars.
+  - It’s the start of most specificity wars.
 - Why can’t I have one object spread across different files?
   - One file for each object adheres to the single source of truth principle. This allows you to easily see all the styles related to one object.
