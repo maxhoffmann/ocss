@@ -26,8 +26,24 @@ What if
 - the preprocessor could generate a documentation of all objects?
 - rules can be easily added via plugins?
 
+Installation
+------------
+
+```bash
+npm install ocss -g
+```
+
+Usage
+-----
+
+```bash
+ocss input.ocss output.css
+
+ocss path/to/input.ocss path/to/output.css
+```
+
 FAQ
---------
+---
 
 - Why disallowing IDs?
   - They prevent reuse and have no advantage to classes.
