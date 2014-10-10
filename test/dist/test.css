@@ -1,0 +1,20 @@
+.test {
+	display: block;
+	color: red;
+}
+.test-child {
+	color: blue;
+	background: transparent;
+}
+.test-child-subchild {
+	font-size: 12px;
+}
+.test-child:hover {
+	color: red;
+}
+.test--big {
+	font-size: 200%;
+}
+.test--big .test-child {
+	color: red;
+}

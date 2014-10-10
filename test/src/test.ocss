@@ -1,0 +1,18 @@
+display: block
+color: red
+
+child // comment
+	color: blue
+	background: transparent
+
+	:hover
+		color: red
+
+	subchild
+		font-size: 12px
+// another comment
+=big
+	font-size: 200%
+
+	child
+		color: red

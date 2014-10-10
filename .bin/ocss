@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+var fs = require('fs')
+var path = require('path')
+var mkdirp = require('mkdirp')
+var rimraf = require('rimraf')
+
+var program = require('commander')
+var parser = require('ocss-parser')
+
+program
+  .version(require('../package.json').version)
+  .usage('<input> <output>')
+  .parse(process.argv)
+
+var input = program.args[0]
+var destination = program.args[1]
+
+var filename = path.basename(input, '.ocss')
+var contents = fs.readFileSync(input, 'utf-8')
+
+var ast = parser.parse(filename, contents)
+var css = parser.stringify(ast)
+
+rimraf(destination, function() {
+
+  mkdirp(path.dirname(destination), function(error) {
+    if (error) throw error
+    fs.writeFileSync(destination, css)
+    console.log('created', destination)
+  })
+
+})
