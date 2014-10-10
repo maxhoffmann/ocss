@@ -1,10 +1,12 @@
 {
   "name": "ocss",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "a CSS preprocessor that restricts you to use best practices",
-  "main": "index.js",
+  "bin": {
+    "ocss": "./.bin/ocss"
+  },
   "scripts": {
-    "test": ".bin/ocss test/src/test.ocss test/dist/test.css"
+    "test": "./.bin/ocss test/src/test.ocss test/dist/test.css"
   },
   "repository": {
     "type": "git",
@@ -25,10 +27,6 @@
     "url": "https://github.com/maxhoffmann/ocss/issues"
   },
   "homepage": "https://github.com/maxhoffmann/ocss",
-  "devDependencies": {
-    "tap-dot": "^0.2.2",
-    "tape": "^2.14.0"
-  },
   "dependencies": {
     "commander": "^2.3.0",
     "mkdirp": "^0.5.0",
